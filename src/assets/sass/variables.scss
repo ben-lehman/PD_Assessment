@@ -1,0 +1,33 @@
+$content-max-width: 1400px;
+$gutter: 120px;
+$gutter--sm: 60px;
+
+$lg-bpt: 1024px;
+$md-bpt: 768px;
+$sm-bpt: 480px;
+
+$background: #fff;
+$background--splash: #F6F6F6;
+$background--footer: #efefef;
+$highlight: #9D1419;
+
+$font--primary: #555559;
+$font--body: #666666;
+$font--dark: #333333;
+$font--light: #ffffff;
+$font--light-gray: #DDDDDD;
+
+$font-family--heading: 'Fjalla One', sans-serif;
+$font-family--body: 'Roboto Slab', serif;
+
+@mixin for-tablet-down {
+  @media (max-width: $md-bpt) { @content }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: $md-bpt) { @content }
+}
+
+@mixin for-mobile-only {
+  @media (max-width: $sm-bpt) { @content }
+}
