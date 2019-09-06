@@ -1,24 +1,33 @@
-$content-max-width: 1400px;
-$gutter: 120px;
-$gutter--sm: 60px;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$lg-bpt: 1024px;
-$md-bpt: 768px;
-$sm-bpt: 480px;
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$background: #fff;
-$background--splash: #F6F6F6;
-$background--footer: #efefef;
-$highlight: #9D1419;
+$background: #f2f2f2;
+$background--light: #ffffff;
+$background--tooltip: #093254;
+$background--splash: #ea7423;
+$background--light-gray: #d9d9d9;
+$background--success: #8bbe0f;
+$background--link: #0b97d2;
 
-$font--primary: #555559;
+$font--primary: #808080;
 $font--body: #666666;
-$font--dark: #333333;
+$font--dark: #000000;
 $font--light: #ffffff;
 $font--light-gray: #DDDDDD;
 
-$font-family--heading: 'Fjalla One', sans-serif;
-$font-family--body: 'Roboto Slab', serif;
+$font-family--heading: 'MontserratBold', sans-serif;
+$font-family--body: 'Montserrat', serif;
 
 @mixin for-tablet-down {
   @media (max-width: $md-bpt) { @content }

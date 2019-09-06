@@ -31,10 +31,15 @@ gulp.task('jsMinify', function() {
         .pipe(gulp.dest('dist/js/'))
 })
 
+gulp.task('fonts', function() {
+  return gulp.src('src/assets/fonts/*.ttf')
+         .pipe(gulp.dest('dist/css/fonts/'))
+})
+
 gulp.task('watch', function() {
   gulp.watch('src/assets/sass/*.scss', gulp.series('css'));
   gulp.watch('src/index.html', gulp.series('index'));
   gulp.watch('src/assets/scripts/*js', gulp.series('jsMinify'));
 });
 
-gulp.task('build', gulp.series('clean', 'css', 'jsMinify', 'index'));
+gulp.task('build', gulp.series('clean', 'css', 'jsMinify', 'fonts', 'index'));
