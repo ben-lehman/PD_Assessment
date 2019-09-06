@@ -10,14 +10,28 @@
     <main>
       <section class="donation-wrapper">
         <h1>Help Us Out!</h1>
+        <p>We need <span id="amount-left">$5000</span> more to reach our goal!</p>
         <div id='loading-bar'>
           <div id='progress'></div>
         </div>
-        <div>
+        <div class="donation-box">
           <p><span>Only 3 days left</span> to reach $5000.</p>
-          <p>Join the <span id="donor-count">70<span> other donors who are helping make apositive impact in the community. Every dollar helps and we can't think
+          <p>
+            Join the <span id="donor-count">70</span> other donors who are helping make a positive impact in the community. Every dollar helps and we can’t thank everyone enough.
+          </p>
+          <div class="form-wrapper">
+            <input type="number" name="donation-amount" id="donation-amount">
+            <button id="donate-button">Donate Now</button>
+          </div>
+          <p><a href="#">Why donate $50?</a></p>
+        </div>
+        <div>
+          <button><a href="#">Save for Later</a></button>
+          <button><a href="#">Tell a Friend</a></button>
         </div>
       </section>
     </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>

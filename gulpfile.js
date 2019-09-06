@@ -27,7 +27,7 @@ gulp.task('css', function() {
 
 gulp.task('jsMinify', function() {
   return gulp.src('src/assets/scripts/*js')
-        .pipe(terser())
+        // .pipe(terser())
         .pipe(gulp.dest('dist/js/'))
 })
 

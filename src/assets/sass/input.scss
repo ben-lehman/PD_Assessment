@@ -5,3 +5,15 @@
   max-width: 375px;
   margin: 0 auto;
 }
+
+#loading-bar {
+  width: 100%;
+  background: grey;
+}
+
+#progress {
+  width: 1%;
+  height: 15px;
+  background-color: orange;
+  transition: width 2s;
+}
